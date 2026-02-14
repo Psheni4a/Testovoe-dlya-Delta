@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Тестовое Товмасян</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Показатель</th>
+          <th>Текущий день</th>
+          <th>Вчера</th>
+          <th>Этот день недели</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="metric-row" data-metric="revenue">
+          <td>Выручка, руб</td>
+          <td>500 521</td>
+          <td class="progression pos">480 521<span>4%</span></td>
+          <td class="neg">4 805 121</td>
+        </tr>
+
+        <tr class="metric-row" data-metric="cash">
+          <td>Наличные</td>
+          <td>300 000</td>
+          <td class="progression">300 000<span>0%</span></td>
+          <td>300 000</td>
+        </tr>
+
+        <tr class="metric-row" data-metric="noncash">
+          <td>Безналичный расчет</td>
+          <td>100 000</td>
+          <td class="progression">100 000<span>0%</span></td>
+          <td>100 000</td>
+        </tr>
+
+        <tr class="metric-row" data-metric="creditcards">
+          <td>Кредитные карты</td>
+          <td>100 521</td>
+          <td class="progression">100 521<span>0%</span></td>
+          <td>100 521</td>
+        </tr>
+
+        <tr class="metric-row" data-metric="midcheck">
+          <td>Средний чек, руб</td>
+          <td>1 300</td>
+          <td class="progression pos">900<span>44%</span></td>
+          <td class="pos">900</td>
+        </tr>
+
+        <tr class="metric-row" data-metric="midguest">
+          <td>Средний гость, руб</td>
+          <td>1 200</td>
+          <td class="progression pos">800<span>50%</span></td>
+          <td class="pos">800</td>
+        </tr>
+
+        <tr class="metric-row" data-metric="deletafrpayment">
+          <td>Удаления из чека (после оплаты), руб</td>
+          <td>1 100</td>
+          <td class="progression neg">1 100<span>-9%</span></td>
+          <td class="pos">900</td>
+        </tr>
+
+        <tr class="metric-row" data-metric="deletbfrpayment">
+          <td>Удаления из чека (до оплаты), руб</td>
+          <td>1 300</td>
+          <td class="progression">1 300<span>0%</span></td>
+          <td class="pos">900</td>
+        </tr>
+
+        <tr class="metric-row" data-metric="checks">
+          <td>Количество чеков</td>
+          <td>34</td>
+          <td class="progression neg">36<span>-6%</span></td>
+          <td>34</td>
+        </tr>
+
+        <tr class="metric-row" data-metric="guests">
+          <td>Количество гостей</td>
+          <td>34</td>
+          <td class="progression neg">36<span>-6%</span></td>
+          <td class="pos">32</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
