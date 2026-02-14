@@ -99,3 +99,12 @@ td > span {
     margin-left: 0.5rem;
   }
 }
+
+@media (max-width: 440px) {
+  html {
+    font-size: 7px;
+  }
+  td > span {
+    margin-left: 0.4rem;
+  }
+}
