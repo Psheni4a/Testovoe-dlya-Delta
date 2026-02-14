@@ -90,3 +90,12 @@ td > span {
     width: 100%;
   }
 }
+
+@media (max-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+  td > span {
+    margin-left: 0.5rem;
+  }
+}
